@@ -15,7 +15,6 @@ pipeline {
         }
 
         stage('Deploy') {
-            when { success() }   // run only if Test succeeds
             steps {
                 echo 'Deploying...'
             }
